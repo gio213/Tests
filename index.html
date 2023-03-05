@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quiz App" />
+    <meta name="author" content="Gio Patsia" />
+    <meta property="og:image" content="https://ibb.co/zRpWTjK" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/icons8-test-results-48.png"
+    />
+    <link rel="reset" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tests</title>
+  </head>
+  <body>
+    <select id="select">
+      <option hidden="true">Choose Categories</option>
+      <option value="generalKnowledge">General knowledge</option>
+      <option value="movie">Movie</option>
+      <option value="boardGames">Board Games</option>
+      <option value="computers">Computers</option>
+      <option value="books">Books</option>
+      <option value="math">Mathematics</option>
+      <option value="sport">Sports</option>
+      <option value="geography">Geography</option>
+      <option value="history">History</option>
+      <option value="celebrities">Celebrities</option>
+      <option value="cars">Vehicles</option>
+      <option value="cartonAnimations">Cartoon & Animations</option>
+      <option value="music">Music</option>
+    </select>
+    <div class="card">
+      <div class="tools">
+        <div class="circle">
+          <span class="red box"></span>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+      </div>
+
+      <div id="question">
+        <p id="questionText"></p>
+      </div>
+      <div id="resultDiv"></div>
+      <div id="answer">
+        <ol id="answers"></ol>
+      </div>
+      <div id="buttonsDiv">
+        <button id="resetBtn">Reset</button>
+        <button id="nextBtn">Next Question</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
